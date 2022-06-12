@@ -1,3 +1,25 @@
+/* reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
 :root {
   --main-color: #ffffff;
   --accent-color: #4ea4dc;
@@ -45,12 +67,7 @@ button {
   border: 1px solid rgba(78, 164, 220, 0.3);
   background-color: transparent;
 }
-.navigation {
-  font-size: 18px;
-}
-.navigation:hover {
-  font-weight: 600;
-}
+
 .preheading {
   font-size: 18px;
   line-height: 120%;
@@ -165,4 +182,64 @@ h2 {
 .designed {
   line-height: 19px;
   opacity: 0.6;
+}
+/* General */
+.section {
+  padding-left: 233px;
+}
+
+.container {
+  width: 1600px;
+  margin: 0, auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+.header {
+  position: fixed;
+}
+
+.header .container {
+display: flex;
+align-items: center;
+/* justify-content: space-between; */
+}
+
+.logo {
+  display: block;
+  width: 67;
+  margin-top: 30px;
+  margin-right: 280px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0, auto;
+  font-size: 18px;
+  margin-right: 230px;
+}
+
+.navigation__item:not(last-of-type) {
+  margin-right: 20px;
+}
+
+.navigation__item-link {
+  padding: 10px;
+  display: block;
+  transition: font-weight 250ms linear;
+}
+
+.navigation__item-link:hover {
+  font-weight: 600;
+}
+
+/* hero */
+.hero {
+  padding-top: 270px;
 }
